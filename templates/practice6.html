@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style8.css">
+</head>
+<body class="">
+    <div class="d1">
+        <div class="d4">
+            <h4> Knew you had liked it 😊</h4>
+        </div>
+        <div class="d2">
+            <h3>So do you want to go out again?</h3>
+        </div>
+        <div class="button">
+            <button class="yes-btn" id="yesBtn">OBV 🤩</button>
+        </div>
+        <div class="d3">
+            <button id="noBtn">NVR 😒</button>
+        </div>
+    </div>
+    <script>
+        const yesBtn = document.getElementById('yesBtn');
+        yesBtn.addEventListener('click', () => {
+            window.location.href = '/okay';
+        });
+        const noBtn = document.getElementById('noBtn');
+        noBtn.addEventListener('click', () => {
+            window.location.href = '/notokay';
+        });
+    </script>
+</body>
+</html>
